@@ -1,0 +1,20 @@
+{
+  "canisters": {
+    "icp-jobs-backend": {
+      "main": "src/icp-jobs-backend/main.mo",
+      "type": "motoko"
+    },
+    "icp-jobs-frontend": {
+      "main": "src/icp-jobs-frontend",
+      "type": "assets",
+      "source": ["dist"]
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8001",
+      "type": "ephemeral"
+    }
+  },
+  "version": 0
+}

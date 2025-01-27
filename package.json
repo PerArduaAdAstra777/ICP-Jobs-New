@@ -1,0 +1,28 @@
+{
+  "name": "icp-jobs",
+  "version": "1.0.0",
+  "description": "ICP Jobs project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "dfx": "dfx deploy"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@dfinity/agent": "^0.10.0",
+    "@dfinity/auth-client": "^0.10.4",
+    "@dfinity/candid": "^0.10.0",
+    "@dfinity/principal": "^0.10.0",
+    "babel-loader": "^8.0.0",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

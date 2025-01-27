@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICP Jobs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>ICP Jobs</h1>
+  <div id="job-form">
+    <h2>Add a CV</h2>
+    <div>
+      <label for="title">Name:</label>
+      <input type="text" id="title" placeholder="Name">
+    </div>
+    <div>
+      <label for="description">Degrees:</label>
+      <input type="text" id="description" placeholder="Degrees (comma separated)">
+    </div>
+    <div>
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" placeholder="Skills (comma separated)" readonly>
+      <label for="skillsDropdown">Select Skills:</label>
+      <select id="skillsDropdown" multiple>
+        <!-- Options will be populated by JavaScript -->
+      </select>
+    </div>
+    <button id="addJobButton" type="button">Add CV</button>
+  </div>
+  <div id="job-list">
+    <h2>Student CVs</h2>
+    <ul id="jobs"></ul>
+  </div>
+  <div id="skill-search">
+    <h2>Search Students by Skill</h2>
+    <select id="skillDropdown"></select>
+    <button id="searchSkillButton" type="button">Search</button>
+  </div>
+  <div id="student-list">
+    <h2>Students</h2>
+    <button id="viewStudentsButton">View Students</button>
+    <ul id="students"></ul>
+  </div>
+  <div id="delete-records">
+    <button id="deleteRecordsButton" type="button">Delete All Records</button>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
